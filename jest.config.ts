@@ -94,8 +94,8 @@ const config: Config = {
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
   transform: {
-    '·+\\.(t|j)sx?$': "@swc/jest"
-  }
+    '^.+\\.(t|j)sx?$': '@swc/jest'
+  },
   
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -129,8 +129,9 @@ const config: Config = {
 
   
   // The root directory that Jest should scan for tests and modules within
-  rootDir: "./src",
+  rootDir: "./src", // Make sure there's a comma here
 
+ 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
   //   "<rootDir>"
